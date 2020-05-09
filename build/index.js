@@ -1,2 +1,2 @@
 "use strict";
-console.log('up and at em');
+Object.defineProperty(exports, "__esModule", { value: true });

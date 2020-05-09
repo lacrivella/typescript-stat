@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/lacrivella/typescript-stat#readme",
   "dependencies": {
+    "@types/node": "^13.13.5",
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.3"
   }
