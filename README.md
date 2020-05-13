@@ -15,4 +15,5 @@ anytime you want to get the type definition for any node module (fs, http, os), 
 ## Generics
 - like function arguments, but for types in class/function definition
 - allows us to define the type of a property/argument/return value at a future point
-- used heavily when writing reusable ode 
+- used heavily when writing reusable code
+`<T>` is a reference to a generic type. This of it like `<TypeOfData>` you can name it whatever you would like. 
