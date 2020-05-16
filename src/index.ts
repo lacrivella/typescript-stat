@@ -9,10 +9,11 @@ const csvFileReader = new CsvFileReader('football.csv');
 // pass in something satisfying the DataReader interface
 const matchReader = new MatchReader(csvFileReader);
 matchReader.load();
+// we can reference matchReader.matches after we invoke .load()
 
 let manUnitedWins = 0;
 
-for (let match of reader.data) {
+for (let match of matchReader.matches) {
   if (match[1] === 'Man United' && match[5] === MatchResult.HomeWin) {
     manUnitedWins++;
   } else if (match[2] === 'Man United' && match[5] === MatchResult.AwayWin) {
