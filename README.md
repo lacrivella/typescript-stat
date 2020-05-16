@@ -26,3 +26,8 @@ anytime you want to get the type definition for any node module (fs, http, os), 
 
 _inheritance_: characterized by an 'is a' relationship between two classes. ex. MatchReader is a CsvFileReader.
 _composition_: characterized by a 'has a' relationship between two classes. ex. MatchReader has a reference to an outside object, like the CsvFileReader.
+
+Multiple Inheritance is different than inheritance!
+
+- multiple inheritence is when an object inheritats methods from multiple different sources.
+- think copy and pasting the methods into something
