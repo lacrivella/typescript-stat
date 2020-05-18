@@ -1,7 +1,7 @@
 import { MatchReader } from './MatchReader';
 import { Summary } from './Summary';
 
-const matchReader = MatchReader.fromCsv('fooball.csv');
+const matchReader = MatchReader.fromCsv('football.csv');
 const summary = Summary.winsAnalysisWithHtmlReport('Man United');
 
 // we can reference matchReader.matches after we invoke .load()
