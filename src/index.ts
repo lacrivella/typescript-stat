@@ -1,6 +1,8 @@
 import { MatchReader } from './MatchReader';
 import { CsvFileReader } from './CsvFileReader';
-import { MatchResult } from './MatchResult';
+import { ConsoleReport } from './reportTargets/ConsoleReport';
+import { WinsAnalysis } from './analyzers/WinsAnalysis';
+import { Summary } from './Summary';
 
 // create an object that satisfies the DataReader interface
 const csvFileReader = new CsvFileReader('football.csv');
@@ -11,4 +13,9 @@ const matchReader = new MatchReader(csvFileReader);
 matchReader.load();
 // we can reference matchReader.matches after we invoke .load()
 
-console.log(`Manchest United won ${manUnitedWins} games this season!`);
+const summary = new Summary(
+  new WinsAnalysis('Man United'),
+  new ConsoleReport()
+);
+
+summary.buildAndPrintReport(matchReader.matches);
